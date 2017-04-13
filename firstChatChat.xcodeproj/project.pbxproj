@@ -7,14 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FC66241C7410F5CCCFC9154 /* Pods_firstChatChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9322CC6828B22BB2A36EF54E /* Pods_firstChatChatUITests.framework */; };
+		647DA6229E87CA32914B24E2 /* Pods_firstChatChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA70EC965C34B89545ACF4F /* Pods_firstChatChatTests.framework */; };
+		A850C4B61E9E02F000238A90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A850C4B51E9E02F000238A90 /* Main.storyboard */; };
+		A850C4B81E9E081200238A90 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A850C4B71E9E081100238A90 /* MapKit.framework */; };
+		A850C4BA1E9E081A00238A90 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A850C4B91E9E081A00238A90 /* CoreLocation.framework */; };
+		A850C4C21E9E08D600238A90 /* ChatUsersInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4BC1E9E08D600238A90 /* ChatUsersInfoTableViewController.swift */; };
+		A850C4C31E9E08D600238A90 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4BD1E9E08D600238A90 /* ChatViewController.swift */; };
+		A850C4C41E9E08D600238A90 /* DialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4BE1E9E08D600238A90 /* DialogsViewController.swift */; };
+		A850C4C51E9E08D600238A90 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4BF1E9E08D600238A90 /* LoginTableViewController.swift */; };
+		A850C4C61E9E08D600238A90 /* NewDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4C01E9E08D600238A90 /* NewDialogViewController.swift */; };
+		A850C4C71E9E08D600238A90 /* UsersListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4C11E9E08D600238A90 /* UsersListTableViewController.swift */; };
+		A850C4CB1E9E08EF00238A90 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4C91E9E08EF00238A90 /* Signup.swift */; };
+		A850C4D21E9E0A5600238A90 /* business-target-7.png in Resources */ = {isa = PBXBuildFile; fileRef = A850C4CC1E9E0A5600238A90 /* business-target-7.png */; };
+		A850C4D31E9E0A5600238A90 /* house-7.png in Resources */ = {isa = PBXBuildFile; fileRef = A850C4CD1E9E0A5600238A90 /* house-7.png */; };
+		A850C4D41E9E0A5600238A90 /* join-uxcam.png in Resources */ = {isa = PBXBuildFile; fileRef = A850C4CE1E9E0A5600238A90 /* join-uxcam.png */; };
+		A850C4D51E9E0A5600238A90 /* message-7.png in Resources */ = {isa = PBXBuildFile; fileRef = A850C4CF1E9E0A5600238A90 /* message-7.png */; };
+		A850C4D61E9E0A5600238A90 /* orig_28868.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A850C4D01E9E0A5600238A90 /* orig_28868.jpg */; };
+		A850C4D71E9E0A5600238A90 /* pin-map-7.png in Resources */ = {isa = PBXBuildFile; fileRef = A850C4D11E9E0A5600238A90 /* pin-map-7.png */; };
+		A850C4DE1E9E1B5D00238A90 /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4D81E9E1B5D00238A90 /* CheckIn.swift */; };
+		A850C4DF1E9E1B5D00238A90 /* editProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4D91E9E1B5D00238A90 /* editProfile.swift */; };
+		A850C4E01E9E1B5D00238A90 /* NearByCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4DA1E9E1B5D00238A90 /* NearByCell.swift */; };
+		A850C4E11E9E1B5D00238A90 /* NearByPoeple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4DB1E9E1B5D00238A90 /* NearByPoeple.swift */; };
+		A850C4E21E9E1B5D00238A90 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4DC1E9E1B5D00238A90 /* profile.swift */; };
+		A850C4E31E9E1B5D00238A90 /* visible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4DD1E9E1B5D00238A90 /* visible.swift */; };
+		A850C4E51E9E213F00238A90 /* tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4E41E9E213E00238A90 /* tabbar.swift */; };
+		A850C4E71E9E352800238A90 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850C4E61E9E352800238A90 /* Login.swift */; };
 		A88D46781E80F50000BA0170 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D46771E80F50000BA0170 /* AppDelegate.swift */; };
 		A88D467A1E80F50000BA0170 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D46791E80F50000BA0170 /* ViewController.swift */; };
-		A88D467D1E80F50000BA0170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88D467B1E80F50000BA0170 /* Main.storyboard */; };
 		A88D46801E80F50000BA0170 /* firstChatChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A88D467E1E80F50000BA0170 /* firstChatChat.xcdatamodeld */; };
 		A88D46821E80F50000BA0170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88D46811E80F50000BA0170 /* Assets.xcassets */; };
 		A88D46851E80F50000BA0170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88D46831E80F50000BA0170 /* LaunchScreen.storyboard */; };
 		A88D46901E80F50000BA0170 /* firstChatChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D468F1E80F50000BA0170 /* firstChatChatTests.swift */; };
 		A88D469B1E80F50000BA0170 /* firstChatChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D469A1E80F50000BA0170 /* firstChatChatUITests.swift */; };
+		A88D46B91E80F7E500BA0170 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88D46B81E80F7E500BA0170 /* CoreTelephony.framework */; };
+		A88D46BB1E80F7FA00BA0170 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88D46BA1E80F7FA00BA0170 /* MobileCoreServices.framework */; };
+		A88D46BD1E80F80000BA0170 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88D46BC1E80F80000BA0170 /* SystemConfiguration.framework */; };
+		A88D46C41E8101D400BA0170 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A88D46C31E8101D400BA0170 /* Localizable.strings */; };
+		A88D46E41E81021E00BA0170 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D46C71E81021E00BA0170 /* String+Localized.swift */; };
+		A88D46E51E81021E00BA0170 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = A88D46C91E81021E00BA0170 /* UIImage+fixOrientation.m */; };
+		A88D46E61E81021E00BA0170 /* ReplaceSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D46CB1E81021E00BA0170 /* ReplaceSegue.swift */; };
+		A88D46E71E81021E00BA0170 /* MPGNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = A88D46CF1E81021E00BA0170 /* MPGNotification.m */; };
+		A88D46E81E81021E00BA0170 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D46D01E81021E00BA0170 /* NotificationService.swift */; };
+		A88D46E91E81021E00BA0170 /* QMMessageNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = A88D46D31E81021E00BA0170 /* QMMessageNotification.m */; };
+		A88D46EA1E81021E00BA0170 /* QMMessageNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A88D46D51E81021E00BA0170 /* QMMessageNotificationManager.m */; };
+		A88D46EB1E81021E00BA0170 /* ServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D46D61E81021E00BA0170 /* ServicesManager.swift */; };
+		A88D46F21E81021E00BA0170 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D46DF1E81021E00BA0170 /* AlertView.swift */; };
+		A88D46F31E81021E00BA0170 /* AlertViewWithTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D46E01E81021E00BA0170 /* AlertViewWithTextField.swift */; };
+		A88D46F41E81021E00BA0170 /* CornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D46E11E81021E00BA0170 /* CornerView.swift */; };
+		A88D46F51E81021E00BA0170 /* DialogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D46E21E81021E00BA0170 /* DialogTableViewCell.swift */; };
+		A88D46F61E81021E00BA0170 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D46E31E81021E00BA0170 /* UserTableViewCell.swift */; };
+		A88D46F81E8102B500BA0170 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D46F71E8102B500BA0170 /* Constants.swift */; };
+		B8CBF146593B01FCD51F5795 /* Pods_firstChatChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723243C1D071274DE0F22F9A /* Pods_firstChatChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +79,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		022328E3F19222E8C4190EA0 /* Pods-firstChatChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firstChatChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-firstChatChatUITests/Pods-firstChatChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1EA70EC965C34B89545ACF4F /* Pods_firstChatChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firstChatChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E0D091AD3F264FFA0EE6F2C /* Pods-firstChatChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firstChatChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-firstChatChat/Pods-firstChatChat.release.xcconfig"; sourceTree = "<group>"; };
+		4091683177BB584A42F9A07B /* Pods-firstChatChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firstChatChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firstChatChatUITests/Pods-firstChatChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		567BB756F25998FE572F5D4B /* Pods-firstChatChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firstChatChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firstChatChat/Pods-firstChatChat.debug.xcconfig"; sourceTree = "<group>"; };
+		723243C1D071274DE0F22F9A /* Pods_firstChatChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firstChatChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9322CC6828B22BB2A36EF54E /* Pods_firstChatChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firstChatChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F07F8BECD6CF513A7C19E1 /* Pods-firstChatChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firstChatChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firstChatChatTests/Pods-firstChatChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A80818A61E9799D200FEC79F /* firstChatChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = firstChatChat.entitlements; sourceTree = "<group>"; };
+		A850C4B51E9E02F000238A90 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A850C4B71E9E081100238A90 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A850C4B91E9E081A00238A90 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A850C4BC1E9E08D600238A90 /* ChatUsersInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatUsersInfoTableViewController.swift; sourceTree = "<group>"; };
+		A850C4BD1E9E08D600238A90 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A850C4BE1E9E08D600238A90 /* DialogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsViewController.swift; sourceTree = "<group>"; };
+		A850C4BF1E9E08D600238A90 /* LoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		A850C4C01E9E08D600238A90 /* NewDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDialogViewController.swift; sourceTree = "<group>"; };
+		A850C4C11E9E08D600238A90 /* UsersListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListTableViewController.swift; sourceTree = "<group>"; };
+		A850C4C91E9E08EF00238A90 /* Signup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		A850C4CC1E9E0A5600238A90 /* business-target-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "business-target-7.png"; sourceTree = "<group>"; };
+		A850C4CD1E9E0A5600238A90 /* house-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-7.png"; sourceTree = "<group>"; };
+		A850C4CE1E9E0A5600238A90 /* join-uxcam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "join-uxcam.png"; sourceTree = "<group>"; };
+		A850C4CF1E9E0A5600238A90 /* message-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message-7.png"; sourceTree = "<group>"; };
+		A850C4D01E9E0A5600238A90 /* orig_28868.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orig_28868.jpg; sourceTree = "<group>"; };
+		A850C4D11E9E0A5600238A90 /* pin-map-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-map-7.png"; sourceTree = "<group>"; };
+		A850C4D81E9E1B5D00238A90 /* CheckIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
+		A850C4D91E9E1B5D00238A90 /* editProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editProfile.swift; sourceTree = "<group>"; };
+		A850C4DA1E9E1B5D00238A90 /* NearByCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByCell.swift; sourceTree = "<group>"; };
+		A850C4DB1E9E1B5D00238A90 /* NearByPoeple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByPoeple.swift; sourceTree = "<group>"; };
+		A850C4DC1E9E1B5D00238A90 /* profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
+		A850C4DD1E9E1B5D00238A90 /* visible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = visible.swift; sourceTree = "<group>"; };
+		A850C4E41E9E213E00238A90 /* tabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabbar.swift; sourceTree = "<group>"; };
+		A850C4E61E9E352800238A90 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		A88D46741E80F50000BA0170 /* firstChatChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstChatChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88D46771E80F50000BA0170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A88D46791E80F50000BA0170 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A88D467C1E80F50000BA0170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A88D467F1E80F50000BA0170 /* firstChatChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = firstChatChat.xcdatamodel; sourceTree = "<group>"; };
 		A88D46811E80F50000BA0170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A88D46841E80F50000BA0170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +125,30 @@
 		A88D46961E80F50000BA0170 /* firstChatChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firstChatChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88D469A1E80F50000BA0170 /* firstChatChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstChatChatUITests.swift; sourceTree = "<group>"; };
 		A88D469C1E80F50000BA0170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A88D46B81E80F7E500BA0170 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A88D46BA1E80F7FA00BA0170 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A88D46BC1E80F80000BA0170 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A88D46C21E80FD6200BA0170 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		A88D46C31E8101D400BA0170 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A88D46C71E81021E00BA0170 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		A88D46C81E81021E00BA0170 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		A88D46C91E81021E00BA0170 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		A88D46CB1E81021E00BA0170 /* ReplaceSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceSegue.swift; sourceTree = "<group>"; };
+		A88D46CE1E81021E00BA0170 /* MPGNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGNotification.h; sourceTree = "<group>"; };
+		A88D46CF1E81021E00BA0170 /* MPGNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGNotification.m; sourceTree = "<group>"; };
+		A88D46D01E81021E00BA0170 /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A88D46D21E81021E00BA0170 /* QMMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMessageNotification.h; sourceTree = "<group>"; };
+		A88D46D31E81021E00BA0170 /* QMMessageNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMMessageNotification.m; sourceTree = "<group>"; };
+		A88D46D41E81021E00BA0170 /* QMMessageNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMMessageNotificationManager.h; sourceTree = "<group>"; };
+		A88D46D51E81021E00BA0170 /* QMMessageNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMMessageNotificationManager.m; sourceTree = "<group>"; };
+		A88D46D61E81021E00BA0170 /* ServicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesManager.swift; sourceTree = "<group>"; };
+		A88D46DF1E81021E00BA0170 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		A88D46E01E81021E00BA0170 /* AlertViewWithTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewWithTextField.swift; sourceTree = "<group>"; };
+		A88D46E11E81021E00BA0170 /* CornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerView.swift; sourceTree = "<group>"; };
+		A88D46E21E81021E00BA0170 /* DialogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogTableViewCell.swift; sourceTree = "<group>"; };
+		A88D46E31E81021E00BA0170 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		A88D46F71E8102B500BA0170 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BDAB9E5A65AC0B539EB2D6C7 /* Pods-firstChatChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firstChatChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-firstChatChatTests/Pods-firstChatChatTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +156,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A850C4BA1E9E081A00238A90 /* CoreLocation.framework in Frameworks */,
+				A850C4B81E9E081200238A90 /* MapKit.framework in Frameworks */,
+				A88D46BD1E80F80000BA0170 /* SystemConfiguration.framework in Frameworks */,
+				A88D46BB1E80F7FA00BA0170 /* MobileCoreServices.framework in Frameworks */,
+				A88D46B91E80F7E500BA0170 /* CoreTelephony.framework in Frameworks */,
+				B8CBF146593B01FCD51F5795 /* Pods_firstChatChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647DA6229E87CA32914B24E2 /* Pods_firstChatChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +177,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC66241C7410F5CCCFC9154 /* Pods_firstChatChatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D53EAE06582EDA11FA2C63B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A850C4B91E9E081A00238A90 /* CoreLocation.framework */,
+				A850C4B71E9E081100238A90 /* MapKit.framework */,
+				A88D46BC1E80F80000BA0170 /* SystemConfiguration.framework */,
+				A88D46BA1E80F7FA00BA0170 /* MobileCoreServices.framework */,
+				A88D46B81E80F7E500BA0170 /* CoreTelephony.framework */,
+				723243C1D071274DE0F22F9A /* Pods_firstChatChat.framework */,
+				1EA70EC965C34B89545ACF4F /* Pods_firstChatChatTests.framework */,
+				9322CC6828B22BB2A36EF54E /* Pods_firstChatChatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33C7E04924742E495ABD4983 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				567BB756F25998FE572F5D4B /* Pods-firstChatChat.debug.xcconfig */,
+				2E0D091AD3F264FFA0EE6F2C /* Pods-firstChatChat.release.xcconfig */,
+				A7F07F8BECD6CF513A7C19E1 /* Pods-firstChatChatTests.debug.xcconfig */,
+				BDAB9E5A65AC0B539EB2D6C7 /* Pods-firstChatChatTests.release.xcconfig */,
+				4091683177BB584A42F9A07B /* Pods-firstChatChatUITests.debug.xcconfig */,
+				022328E3F19222E8C4190EA0 /* Pods-firstChatChatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A850C4BB1E9E08D600238A90 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A850C4BC1E9E08D600238A90 /* ChatUsersInfoTableViewController.swift */,
+				A850C4BD1E9E08D600238A90 /* ChatViewController.swift */,
+				A850C4BE1E9E08D600238A90 /* DialogsViewController.swift */,
+				A850C4BF1E9E08D600238A90 /* LoginTableViewController.swift */,
+				A850C4C01E9E08D600238A90 /* NewDialogViewController.swift */,
+				A850C4C11E9E08D600238A90 /* UsersListTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		A88D466B1E80F50000BA0170 = {
 			isa = PBXGroup;
 			children = (
+				A850C4CC1E9E0A5600238A90 /* business-target-7.png */,
+				A850C4CD1E9E0A5600238A90 /* house-7.png */,
+				A850C4CE1E9E0A5600238A90 /* join-uxcam.png */,
+				A850C4CF1E9E0A5600238A90 /* message-7.png */,
+				A850C4D01E9E0A5600238A90 /* orig_28868.jpg */,
+				A850C4D11E9E0A5600238A90 /* pin-map-7.png */,
+				A88D46C31E8101D400BA0170 /* Localizable.strings */,
+				A88D46C21E80FD6200BA0170 /* Bridging-Header.h */,
 				A88D46761E80F50000BA0170 /* firstChatChat */,
 				A88D468E1E80F50000BA0170 /* firstChatChatTests */,
 				A88D46991E80F50000BA0170 /* firstChatChatUITests */,
 				A88D46751E80F50000BA0170 /* Products */,
+				33C7E04924742E495ABD4983 /* Pods */,
+				1D53EAE06582EDA11FA2C63B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +258,21 @@
 		A88D46761E80F50000BA0170 /* firstChatChat */ = {
 			isa = PBXGroup;
 			children = (
+				A80818A61E9799D200FEC79F /* firstChatChat.entitlements */,
+				A88D46C51E81021E00BA0170 /* Classes */,
 				A88D46771E80F50000BA0170 /* AppDelegate.swift */,
 				A88D46791E80F50000BA0170 /* ViewController.swift */,
-				A88D467B1E80F50000BA0170 /* Main.storyboard */,
+				A850C4E61E9E352800238A90 /* Login.swift */,
+				A850C4C91E9E08EF00238A90 /* Signup.swift */,
+				A850C4E41E9E213E00238A90 /* tabbar.swift */,
+				A850C4D81E9E1B5D00238A90 /* CheckIn.swift */,
+				A850C4D91E9E1B5D00238A90 /* editProfile.swift */,
+				A850C4DA1E9E1B5D00238A90 /* NearByCell.swift */,
+				A850C4DB1E9E1B5D00238A90 /* NearByPoeple.swift */,
+				A850C4DC1E9E1B5D00238A90 /* profile.swift */,
+				A850C4DD1E9E1B5D00238A90 /* visible.swift */,
 				A88D46811E80F50000BA0170 /* Assets.xcassets */,
+				A850C4B51E9E02F000238A90 /* Main.storyboard */,
 				A88D46831E80F50000BA0170 /* LaunchScreen.storyboard */,
 				A88D46861E80F50000BA0170 /* Info.plist */,
 				A88D467E1E80F50000BA0170 /* firstChatChat.xcdatamodeld */,
@@ -128,6 +298,80 @@
 			path = firstChatChatUITests;
 			sourceTree = "<group>";
 		};
+		A88D46C51E81021E00BA0170 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A88D46F71E8102B500BA0170 /* Constants.swift */,
+				A850C4BB1E9E08D600238A90 /* ViewControllers */,
+				A88D46C61E81021E00BA0170 /* Extensions */,
+				A88D46CA1E81021E00BA0170 /* ReplaceSegue */,
+				A88D46CC1E81021E00BA0170 /* Services */,
+				A88D46DE1E81021E00BA0170 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A88D46C61E81021E00BA0170 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A88D46C71E81021E00BA0170 /* String+Localized.swift */,
+				A88D46C81E81021E00BA0170 /* UIImage+fixOrientation.h */,
+				A88D46C91E81021E00BA0170 /* UIImage+fixOrientation.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A88D46CA1E81021E00BA0170 /* ReplaceSegue */ = {
+			isa = PBXGroup;
+			children = (
+				A88D46CB1E81021E00BA0170 /* ReplaceSegue.swift */,
+			);
+			path = ReplaceSegue;
+			sourceTree = "<group>";
+		};
+		A88D46CC1E81021E00BA0170 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A88D46CD1E81021E00BA0170 /* MPGNotification */,
+				A88D46D01E81021E00BA0170 /* NotificationService.swift */,
+				A88D46D11E81021E00BA0170 /* QMMessageNotificationManager */,
+				A88D46D61E81021E00BA0170 /* ServicesManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A88D46CD1E81021E00BA0170 /* MPGNotification */ = {
+			isa = PBXGroup;
+			children = (
+				A88D46CE1E81021E00BA0170 /* MPGNotification.h */,
+				A88D46CF1E81021E00BA0170 /* MPGNotification.m */,
+			);
+			path = MPGNotification;
+			sourceTree = "<group>";
+		};
+		A88D46D11E81021E00BA0170 /* QMMessageNotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				A88D46D21E81021E00BA0170 /* QMMessageNotification.h */,
+				A88D46D31E81021E00BA0170 /* QMMessageNotification.m */,
+				A88D46D41E81021E00BA0170 /* QMMessageNotificationManager.h */,
+				A88D46D51E81021E00BA0170 /* QMMessageNotificationManager.m */,
+			);
+			path = QMMessageNotificationManager;
+			sourceTree = "<group>";
+		};
+		A88D46DE1E81021E00BA0170 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A88D46DF1E81021E00BA0170 /* AlertView.swift */,
+				A88D46E01E81021E00BA0170 /* AlertViewWithTextField.swift */,
+				A88D46E11E81021E00BA0170 /* CornerView.swift */,
+				A88D46E21E81021E00BA0170 /* DialogTableViewCell.swift */,
+				A88D46E31E81021E00BA0170 /* UserTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +379,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A88D469F1E80F50000BA0170 /* Build configuration list for PBXNativeTarget "firstChatChat" */;
 			buildPhases = (
+				544E754A40FD954FE3F90774 /* [CP] Check Pods Manifest.lock */,
 				A88D46701E80F50000BA0170 /* Sources */,
 				A88D46711E80F50000BA0170 /* Frameworks */,
 				A88D46721E80F50000BA0170 /* Resources */,
+				CD9AC62A79B01B4471AF1999 /* [CP] Embed Pods Frameworks */,
+				7BF296C71229A083194EABAE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +399,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A88D46A21E80F50000BA0170 /* Build configuration list for PBXNativeTarget "firstChatChatTests" */;
 			buildPhases = (
+				16E526311514823434630CD3 /* [CP] Check Pods Manifest.lock */,
 				A88D46871E80F50000BA0170 /* Sources */,
 				A88D46881E80F50000BA0170 /* Frameworks */,
 				A88D46891E80F50000BA0170 /* Resources */,
+				AB79C5EA5679B882B2E9EA03 /* [CP] Embed Pods Frameworks */,
+				5BE01BB7DD84230FEF8E2F43 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +420,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A88D46A51E80F50000BA0170 /* Build configuration list for PBXNativeTarget "firstChatChatUITests" */;
 			buildPhases = (
+				53C0192C4EC234499F2FF014 /* [CP] Check Pods Manifest.lock */,
 				A88D46921E80F50000BA0170 /* Sources */,
 				A88D46931E80F50000BA0170 /* Frameworks */,
 				A88D46941E80F50000BA0170 /* Resources */,
+				61ED5B754060A8AC01F1FEFA /* [CP] Embed Pods Frameworks */,
+				826FAB7425318029C3206F5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +451,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = EU7E6J5A6W;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					A88D468A1E80F50000BA0170 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -237,8 +495,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A88D46851E80F50000BA0170 /* LaunchScreen.storyboard in Resources */,
+				A850C4D51E9E0A5600238A90 /* message-7.png in Resources */,
+				A850C4D71E9E0A5600238A90 /* pin-map-7.png in Resources */,
+				A850C4D21E9E0A5600238A90 /* business-target-7.png in Resources */,
+				A850C4D31E9E0A5600238A90 /* house-7.png in Resources */,
+				A88D46C41E8101D400BA0170 /* Localizable.strings in Resources */,
 				A88D46821E80F50000BA0170 /* Assets.xcassets in Resources */,
-				A88D467D1E80F50000BA0170 /* Main.storyboard in Resources */,
+				A850C4B61E9E02F000238A90 /* Main.storyboard in Resources */,
+				A850C4D41E9E0A5600238A90 /* join-uxcam.png in Resources */,
+				A850C4D61E9E0A5600238A90 /* orig_28868.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,14 +523,181 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16E526311514823434630CD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		53C0192C4EC234499F2FF014 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		544E754A40FD954FE3F90774 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5BE01BB7DD84230FEF8E2F43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firstChatChatTests/Pods-firstChatChatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61ED5B754060A8AC01F1FEFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firstChatChatUITests/Pods-firstChatChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BF296C71229A083194EABAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firstChatChat/Pods-firstChatChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		826FAB7425318029C3206F5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firstChatChatUITests/Pods-firstChatChatUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB79C5EA5679B882B2E9EA03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firstChatChatTests/Pods-firstChatChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD9AC62A79B01B4471AF1999 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firstChatChat/Pods-firstChatChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A88D46701E80F50000BA0170 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A88D46F51E81021E00BA0170 /* DialogTableViewCell.swift in Sources */,
+				A88D46EA1E81021E00BA0170 /* QMMessageNotificationManager.m in Sources */,
+				A88D46F61E81021E00BA0170 /* UserTableViewCell.swift in Sources */,
+				A850C4E21E9E1B5D00238A90 /* profile.swift in Sources */,
+				A88D46E51E81021E00BA0170 /* UIImage+fixOrientation.m in Sources */,
+				A850C4C21E9E08D600238A90 /* ChatUsersInfoTableViewController.swift in Sources */,
+				A88D46F81E8102B500BA0170 /* Constants.swift in Sources */,
+				A850C4DF1E9E1B5D00238A90 /* editProfile.swift in Sources */,
+				A850C4CB1E9E08EF00238A90 /* Signup.swift in Sources */,
+				A850C4E01E9E1B5D00238A90 /* NearByCell.swift in Sources */,
 				A88D46801E80F50000BA0170 /* firstChatChat.xcdatamodeld in Sources */,
+				A88D46E71E81021E00BA0170 /* MPGNotification.m in Sources */,
+				A88D46E91E81021E00BA0170 /* QMMessageNotification.m in Sources */,
+				A88D46EB1E81021E00BA0170 /* ServicesManager.swift in Sources */,
+				A850C4E11E9E1B5D00238A90 /* NearByPoeple.swift in Sources */,
+				A88D46E61E81021E00BA0170 /* ReplaceSegue.swift in Sources */,
+				A850C4C31E9E08D600238A90 /* ChatViewController.swift in Sources */,
+				A850C4DE1E9E1B5D00238A90 /* CheckIn.swift in Sources */,
+				A88D46E81E81021E00BA0170 /* NotificationService.swift in Sources */,
+				A850C4E51E9E213F00238A90 /* tabbar.swift in Sources */,
+				A88D46F21E81021E00BA0170 /* AlertView.swift in Sources */,
+				A850C4C71E9E08D600238A90 /* UsersListTableViewController.swift in Sources */,
 				A88D467A1E80F50000BA0170 /* ViewController.swift in Sources */,
+				A88D46F41E81021E00BA0170 /* CornerView.swift in Sources */,
+				A850C4C41E9E08D600238A90 /* DialogsViewController.swift in Sources */,
+				A88D46F31E81021E00BA0170 /* AlertViewWithTextField.swift in Sources */,
+				A88D46E41E81021E00BA0170 /* String+Localized.swift in Sources */,
 				A88D46781E80F50000BA0170 /* AppDelegate.swift in Sources */,
+				A850C4E31E9E1B5D00238A90 /* visible.swift in Sources */,
+				A850C4C51E9E08D600238A90 /* LoginTableViewController.swift in Sources */,
+				A850C4C61E9E08D600238A90 /* NewDialogViewController.swift in Sources */,
+				A850C4E71E9E352800238A90 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +733,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A88D467B1E80F50000BA0170 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A88D467C1E80F50000BA0170 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A88D46831E80F50000BA0170 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -415,32 +839,47 @@
 		};
 		A88D46A01E80F50000BA0170 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 567BB756F25998FE572F5D4B /* Pods-firstChatChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = firstChatChat/firstChatChat.entitlements;
 				DEVELOPMENT_TEAM = EU7E6J5A6W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = firstChatChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sixthsense.firstChatChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		A88D46A11E80F50000BA0170 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0D091AD3F264FFA0EE6F2C /* Pods-firstChatChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = firstChatChat/firstChatChat.entitlements;
 				DEVELOPMENT_TEAM = EU7E6J5A6W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = firstChatChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sixthsense.firstChatChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		A88D46A31E80F50000BA0170 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7F07F8BECD6CF513A7C19E1 /* Pods-firstChatChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -455,6 +894,7 @@
 		};
 		A88D46A41E80F50000BA0170 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDAB9E5A65AC0B539EB2D6C7 /* Pods-firstChatChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +909,7 @@
 		};
 		A88D46A61E80F50000BA0170 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4091683177BB584A42F9A07B /* Pods-firstChatChatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = firstChatChatUITests/Info.plist;
@@ -482,6 +923,7 @@
 		};
 		A88D46A71E80F50000BA0170 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 022328E3F19222E8C4190EA0 /* Pods-firstChatChatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = firstChatChatUITests/Info.plist;
@@ -512,6 +954,7 @@
 				A88D46A11E80F50000BA0170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A88D46A21E80F50000BA0170 /* Build configuration list for PBXNativeTarget "firstChatChatTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +963,7 @@
 				A88D46A41E80F50000BA0170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A88D46A51E80F50000BA0170 /* Build configuration list for PBXNativeTarget "firstChatChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +972,7 @@
 				A88D46A71E80F50000BA0170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

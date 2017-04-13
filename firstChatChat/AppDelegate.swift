@@ -1,93 +1,180 @@
 //
 //  AppDelegate.swift
-//  firstChatChat
+//  sample-chat-swift
 //
-//  Created by ankur kumawat on 3/21/17.
-//  Copyright © 2017 sixthsense. All rights reserved.
+//  Created by Anton Sokolchenko on 3/30/15.
+//  Copyright (c) 2015 quickblox. All rights reserved.
 //
 
 import UIKit
-import CoreData
+import Fabric
+import Crashlytics
+import Quickblox
+import GooglePlaces
+import GoogleMaps
+import IQKeyboardManagerSwift
+
+
+let kQBApplicationID:UInt = 55389
+let kQBAuthKey = "j-6xm-VtmypUThk"
+let kQBAuthSecret = "U4WXN5P8rw3T6aT"
+let kQBAccountKey = "kkrEXioiDSTew7cvobf1"
+
+//let kQBApplicationID:UInt = 28784
+//let kQBAuthKey = "QJtmmW2Z7tb-mJF"
+//let kQBAuthSecret = "xuwgyRWcUhcwjCM"
+//let kQBAccountKey = "7yvNe17TnjNUqDoPwfqp"
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate, NotificationServiceDelegate {
+    
     var window: UIWindow?
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        IQKeyboardManager.sharedManager().enable = true
+        GMSPlacesClient.provideAPIKey("AIzaSyD4kmD-nZ2F2btHaAuB6W7Wr3GQb-owYUA")
+        GMSServices.provideAPIKey("AIzaSyD4kmD-nZ2F2btHaAuB6W7Wr3GQb-owYUA")
+        
+        
+        Fabric.with([Crashlytics.self])
+        
+        application.applicationIconBadgeNumber = 0
+        
+        // Set QuickBlox credentials (You must create application in admin.quickblox.com).
+        QBSettings.setApplicationID(kQBApplicationID)
+        QBSettings.setAuthKey(kQBAuthKey)
+        QBSettings.setAuthSecret(kQBAuthSecret)
+        QBSettings.setAccountKey(kQBAccountKey)
+        
+        // enabling carbons for chat
+        QBSettings.setCarbonsEnabled(true)
+        
+        // Enables Quickblox REST API calls debug console output.
+        QBSettings.setLogLevel(QBLogLevel.nothing)
+        print("log level = \( QBSettings.setLogLevel(QBLogLevel.nothing))")
+        
+        // Enables detailed XMPP logging in console output.
+        QBSettings.enableXMPPLogging()
+        print("xmpp login = \(QBSettings.enableXMPPLogging())")
+        
+        // app was launched from push notification, handling it
+        let remoteNotification: NSDictionary! = launchOptions?[UIApplicationLaunchOptionsKey.remoteNotification] as? NSDictionary
+        if (remoteNotification != nil) {
+            ServicesManager.instance().notificationService.pushDialogID = remoteNotification["SA_STR_PUSH_NOTIFICATION_DIALOG_ID".localized] as? String
+        }
+        QBChat.instance().disconnect { (error: Error?) -> Void in
+            
+        }
         return true
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        // Saves changes in the application's managed object context before the application terminates.
-        self.saveContext()
-    }
-
-    // MARK: - Core Data stack
-
-    lazy var persistentContainer: NSPersistentContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-        */
-        let container = NSPersistentContainer(name: "firstChatChat")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
-
-    // MARK: - Core Data Saving support
-
-    func saveContext () {
-        let context = persistentContainer.viewContext
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        
+        let deviceIdentifier: String = UIDevice.current.identifierForVendor!.uuidString
+        let subscription: QBMSubscription! = QBMSubscription()
+        
+        subscription.notificationChannel = QBMNotificationChannel.APNS
+        subscription.deviceUDID = deviceIdentifier
+        subscription.deviceToken = deviceToken
+        QBRequest.createSubscription(subscription, successBlock: { (response: QBResponse!, objects: [QBMSubscription]?) -> Void in
+            //
+        }) { (response: QBResponse!) -> Void in
+            //
         }
     }
-
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("Push failed to register with error: %@", error)
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+        
+        print("my push is: %@", userInfo)
+        guard application.applicationState == UIApplicationState.inactive else {
+            return
+        }
+        
+        guard let dialogID = userInfo["SA_STR_PUSH_NOTIFICATION_DIALOG_ID".localized] as? String else {
+            return
+        }
+        
+        guard !dialogID.isEmpty else {
+            return
+        }
+        
+        
+        let dialogWithIDWasEntered: String? = ServicesManager.instance().currentDialogID
+        if dialogWithIDWasEntered == dialogID {
+            return
+        }
+        
+        ServicesManager.instance().notificationService.pushDialogID = dialogID
+        
+        // calling dispatch async for push notification handling to have priority in main queue
+        DispatchQueue.main.async {
+            
+            ServicesManager.instance().notificationService.handlePushNotificationWithDelegate(delegate: self)
+        }
+    }
+    
+    func applicationWillResignActive(_ application: UIApplication) {
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        
+        application.applicationIconBadgeNumber = 0
+        // Logging out from chat.
+        ServicesManager.instance().chatService.disconnect(completionBlock: nil)
+    }
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        // Logging in to chat.
+        ServicesManager.instance().chatService.connect(completionBlock: nil)
+        let user = QBUUser()
+        user.id = 25618058
+        user.password = "Xvm123DqkM"
+        QBChat.instance().connect(with: user) { (error: Error?) -> Void in
+            print("jhefkjghhgh===================\(user)")
+        }
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        // Logging out from chat.
+        ServicesManager.instance().chatService.disconnect(completionBlock: nil)
+        QBChat.instance().disconnect { (error: Error?) -> Void in
+            
+        }
+    }
+    
+    // MARK: NotificationServiceDelegate protocol
+    
+    func notificationServiceDidStartLoadingDialogFromServer() {
+    }
+    
+    func notificationServiceDidFinishLoadingDialogFromServer() {
+    }
+    
+    func notificationServiceDidSucceedFetchingDialog(chatDialog: QBChatDialog!) {
+        let navigatonController: UINavigationController! = self.window?.rootViewController as! UINavigationController
+        
+        let chatController: ChatViewController = UIStoryboard(name:"Main", bundle: nil).instantiateViewController(withIdentifier: "ChatViewController") as! ChatViewController
+        chatController.dialog = chatDialog
+        
+        let dialogWithIDWasEntered = ServicesManager.instance().currentDialogID
+        if !dialogWithIDWasEntered.isEmpty {
+            // some chat already opened, return to dialogs view controller first
+            navigatonController.popViewController(animated: false);
+        }
+        
+        navigatonController.pushViewController(chatController, animated: true)
+    }
+    
+    func notificationServiceDidFailFetchingDialog() {
+    }
 }
 
